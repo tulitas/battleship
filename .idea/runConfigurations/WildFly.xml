@@ -1,0 +1,74 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="WildFly" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 14.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
+    <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+    <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+    <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+    <deployment>
+      <artifact name="battleship:war exploded">
+        <settings />
+      </artifact>
+    </deployment>
+    <server-settings>
+      <option name="SERVER" />
+      <option name="BINDING_SET_NAME" value="" />
+      <option name="DOMAIN" value="false" />
+      <option name="SERVER_GROUP" value="main-server-group" />
+      <option name="USERNAME" value="" />
+      <option name="PASSWORD" value="" />
+    </server-settings>
+    <predefined_log_file id="JBoss" enabled="true" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="54593" />
+    </RunnerSettings>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <method v="2">
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="battleship:war exploded" />
+      </option>
+    </method>
+  </configuration>
+</component>

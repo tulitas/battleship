@@ -21,6 +21,7 @@
             <p>
                 <label for="username" class="w3-text-blue"><b>Enter your name:</b></label>
                 <input class="w3-input w3-border" id="username" type="text" name="username">
+                ${errorHolder.message}
             </p>
             <p>
                 <button class="w3-button w3-blue" type="submit">Start!</button>

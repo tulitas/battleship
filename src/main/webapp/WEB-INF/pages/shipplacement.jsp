@@ -5,7 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-<form>
+${errorHolder.message}
+<form method="post" action="shipplacement">
 <table>
     <tr>
         <td>&nbsp;</td>
@@ -18,7 +19,12 @@
             <td>${row}</td>
             <c:forEach items="A,B,C,D,E,F,G,H,I,J" var="col">
                 <td>
-                    <input type="checkbox" name="cell" value="${col}${row}">
+                    <c:set var="addr" value="${col}${row}"/>
+                    <input type="checkbox"
+                           name="cell"
+                           value="${addr}"
+                     <c:if test="${tempShipsHolder.ships[addr]}">checked</c:if>
+                    >
                 </td>
             </c:forEach>
         </tr>

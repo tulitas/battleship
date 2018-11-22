@@ -1,5 +1,6 @@
 package lv.tsi.battleship;
 
+import lv.tsi.battleship.model.Game;
 import lv.tsi.battleship.model.MyGame;
 
 import javax.inject.Inject;
@@ -20,7 +21,8 @@ public class WaitPlacementServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if (myGame.getGame().isReady()) {
+        Game game = myGame.getGame();
+        if (game.isReady()) {
             response.sendRedirect("/battleship/game");
         } else {
             request.getRequestDispatcher("/WEB-INF/pages/waitplacement.jsp")
